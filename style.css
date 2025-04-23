@@ -71,6 +71,11 @@ header nav ul li:hover {
     text-shadow: 0 0 10px #ff0000;
 }
 
+header nav a:hover {
+    transform: scale(1.2);
+}
+
+
 section.inicio {
     display: flex;
     justify-content: center;
@@ -125,3 +130,17 @@ section.inicio img {
     margin-bottom: -55%;
 }
 
+/* EFEITO DE HOVER NO BACKGROUND */
+.spotlight {
+    position: absolute;
+    pointer-events: none;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    mix-blend-mode: screen;
+    transition: opacity 0.2s ease;
+  }
+  
