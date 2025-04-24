@@ -27,7 +27,80 @@ span {
     font-weight: bold;
 }
 
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+    transform: scale(1);
+    animation: popOut 3s forwards; /* Animação de pop-out */
+  }
 
+  /* Logo */
+  .logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    animation: glitch 1s infinite; /* Efeito Glitch */
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000; /* Efeito Glow */
+  }
+
+  /* Texto de boas-vindas */
+  .welcome-text {
+    color: #d11515;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    animation: glitch 1s infinite; /* Efeito Glitch */
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000; /* Efeito Glow */
+  }
+
+  /* Spinner */
+  .spinner {
+    border: 8px solid rgba(75, 75, 75, 0.795); /* Cor da borda */
+    border-top: 8px solid #ff0000; /* Cor da borda superior (efeito de "carregamento") */
+    border-radius: 50%; /* Tornar o spinner redondo */
+    width: 80px; /* Tamanho do spinner */
+    height: 80px; /* Tamanho do spinner */
+    animation: spin 2s linear infinite, glitch 1s infinite; /* Efeito Glitch + Animação de rotação */
+    margin-top: 20px;
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000; /* Efeito Glow */
+  }
+
+  /* Animação de rotação */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  /* Animação de pop-out */
+  @keyframes popOut {
+    0% { transform: scale(1); }
+    80% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(1.1); opacity: 0; }
+  }
+
+  /* Efeito Glitch */
+  @keyframes glitch {
+    0% { text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000; }
+    20% { text-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 60px #ff0000; }
+    40% { text-shadow: 0 0 30px #ff0000, 0 0 60px #ff0000, 0 0 90px #ff0000; }
+    60% { text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000; }
+    80% { text-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000, 0 0 60px #ff0000; }
+    100% { text-shadow: 0 0 30px #ff0000, 0 0 60px #ff0000, 0 0 90px #ff0000; }
+  }
+
+  /* Esconde o preloader após o carregamento */
+  body.loaded #preloader {
+    display: none;
+  }
 /* ESTILO CABEÇALHO */
 header nav {
     display: flex;
