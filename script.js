@@ -16,4 +16,4 @@
   inicioSection.addEventListener('mouseleave', () => {
     spotlight.style.opacity = 0;
   });
-
+  

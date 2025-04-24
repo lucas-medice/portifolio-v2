@@ -75,7 +75,7 @@ header nav a:hover {
     transform: scale(1.2);
 }
 
-
+/* INICIO */
 section.inicio {
     display: flex;
     justify-content: center;
@@ -131,18 +131,19 @@ section.inicio img {
 }
 
 /* EFEITO DE HOVER NO BACKGROUND */
+/* SPOTLIGHT */
 .spotlight {
     position: absolute;
     pointer-events: none;
-    width: 250px;
-    height: 250px;
-    background: radial-gradient(circle, rgba(255, 0, 0, 0.2) 0%, transparent 70%);
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.15) 0%, transparent 80%);
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: 0;
     mix-blend-mode: screen;
     transition: opacity 0.2s ease;
-  }
+}
 
   section.inicio .badges ul {
     display: flex;
@@ -169,3 +170,8 @@ section.inicio img {
     margin-left: 100px;
   }
   
+  /* SOBRE */
+section.sobre {
+    height: 100vh;
+    background-image: url(assets/img/bg-1.png);
+}
