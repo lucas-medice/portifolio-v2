@@ -143,4 +143,29 @@ section.inicio img {
     mix-blend-mode: screen;
     transition: opacity 0.2s ease;
   }
+
+  section.inicio .badges ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+  }
+
+  section.inicio .badges ul li {
+    list-style: none;
+  }
+  section.inicio .badges ul li:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    text-shadow: 0 0 10px#DB1515;
+  }
+
+  section.inicio .badges img {
+    width: 110px;
+    height: 110px;
+  }
+  section.inicio .badges {
+    position: absolute;
+    margin-top: 330px;
+    margin-left: 100px;
+  }
   
