@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TheB4TM4N</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,26 +19,24 @@
 </head>
 
 <body>
-
     <div id="preloader">
         <img class="logo" src="assets/img/bat.png" alt="Logo">
         <div class="welcome-text">Seja bem vindo!</div>
         <div class="spinner"></div> <!-- Spinner substituindo a barra de progresso -->
-      </div>
-    
+    </div>
 
     <header>
         <nav>
             <div class="container">
                 <div class="logo-nav">
                     <a href="#">
-                        <img src="assets/img/bat (1).png" alt="">
+                        <img src="assets/img/bat (1).png" alt="Logo">
                     </a>
                 </div><!--LOGO-->
 
-
                 <div class="txt-nav">
                     <ul>
+                        <li><a href="#inicio">Início</a></li>
                         <li><a href="#sobre">Sobre</a></li>
                         <li><a href="#">Especialidades</a></li>
                         <li><a href="#">Currículo</a></li>
@@ -51,7 +48,7 @@
     </header>
 
     <main>
-        <section class="inicio">
+        <section id="inicio" class="inicio">
             <div class="container">
                 <div class="flex">
                     <div class="txt-inicio">
@@ -62,22 +59,20 @@
                             organizações.</p>
                     </div>
 
-
-                    <div class="img-inicio"><img src="assets/img/eu.png" alt=""></div>
+                    <div class="img-inicio"><img src="assets/img/eu.png" alt="Lucas Medice"></div>
 
                     <div class="badges">
                         <ul>
-                            <li><a href="https://www.credly.com/badges/c23724d8-ca5f-40b0-b71e-61e201ab3f41/public_url" target="_blank"><img src="assets/img/Badge 1.png" alt=""></a></li>
-                            <li><a href=""><img src="assets/img/Badge 3.png" alt=""></a></li>
+                            <li><a href="https://www.credly.com/badges/c23724d8-ca5f-40b0-b71e-61e201ab3f41/public_url"
+                                    target="_blank"><img src="assets/img/Badge 1.png" alt="Badge 1"></a></li>
+                            <li><a href=""><img src="assets/img/Badge 3.png" alt="Badge 2"></a></li>
                         </ul>
-                    </div>    
-                
+                    </div>
                 </div>
-
             </div>
         </section><!--INICIO-->
 
-        <section class="sobre">
+        <section id="sobre" class="sobre">
             <div class="top-bar">
                 <div class="team red">Red Team</div>
                 <div class="logo-bat">
@@ -87,14 +82,143 @@
                 <div class="team blue">Blue Team</div>
             </div>
 
+            <!-- NOVA SEÇÃO DE APRESENTAÇÃO -->
+            <div class="hero-presentation">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h2 class="glitch-text">"Quem sou eu?"</h2>
+                            <p class="subtitle">Conheça minha <span>história:</span></p>
 
+                            <div class="hero-description">
+                                <p>Sou um jovem que sempre esteve muito ligado a tecnologia. Desde os meus 5 anos, tive
+                                    curiosidade por entender como as coisas funcionam, principalmente quando se trata de informática e a mente humana.
+                                    Motivado por conteúdos na internet e por filmes, comecei a explorar o mundo do T.I até chegar em segurança da informação.
+                                    Seja muito bem-vindo ao meu portifólio, ficarei feliz em contar a minha história.
+                                </p>
+
+                                <div class="identity-reveal">
+                                    <div class="identity-mask">
+                                        <img src="assets/img/mask.jpg"Máscara">
+                                    </div>
+                                    <div class="identity-text">
+                                        <h3>Lucas Medice</h3>
+                                        <p>Por trás do símbolo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hero-image">
+                            <img src="assets/img/batman.jpg" alt="Silhueta do Batman" class="silhouette">
+                            <div class="code-matrix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sobre-content">
+                <div class="timeline">
+                    <!-- Item 1 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h3>Início da Jornada <span class="year">2019</span></h3>
+                            <p>O despertar do meu interesse sobre hacking e segurança da informação, aos meus 12 anos aprendi sozinho
+                                a manipular arquivos .bat para fazer pequenos scripts para brincar com os colegas de classe na escola
+                                e tive meu primeiro contato além do básico para com o Windows.</p>
+                            <div class="tech-tags">
+                                <span>Windows</span>
+                                <span>Curiosidade</span>
+                            </div>
+                        </div>
+                        <div class="timeline-img">
+                            <img src="assets/img/begin.jpg" alt="Início da Jornada">
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <h3>A Pandemia <span class="year">2022</span></h3>
+                            <p>No auge da pandemia, nos períodos de lockdown eu estava iniciando o meu ensino médio com curso técnico
+                                de Desenvolvimento de Sistemas (TDS) integrado. Aulas online e muito tempo livre foram essenciais para
+                                estimular curiosidade e consumir mais conteúdos sobre T.I de uma forma completa, especialmente programação e aplicações web.</p>
+                            <div class="tech-tags">
+                                <span>Programação</span>
+                                <span>Desenvolvimento Web</span>
+                            </div>
+                        </div>
+                        <div class="timeline-img">
+                            <img src="assets/img/pandemia.jpg" alt="BatCaverna Digital">
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <h3>O Despertar <span class="year">2024</span></h3>
+                            <p>Tive um grande professor de back-end na escola, que me apresentou então conceitos mais avançados sobre T.I e cibersegurança,
+                                me recomendou meus primeiros cursos específicos profissionalizantes, ensinou como extrair o máximo das tecnologias disponíveis.
+                                Linux, Forense Digital, Redes, Red Team e Blue Team... Dentre outras habilidades foram conhecidas.</p>
+                            <div class="tech-tags">
+                                <span>Linux</span>
+                                <span>Cybersecurity</span>
+                                <span>Inteligência Artificial</span>
+                                <span>Fundamentos sólidos em T.I</span>
+                            </div>
+                        </div>
+                        <div class="timeline-img">
+                            <img src="assets/img/chair.jpg" alt="Certificação">
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <h3>Um novo começo <span class="year">Presente</span></h3>
+                            <p>Neste ano, dei meus primeiros grandes passos em uma carreira na área da segurança, comecei
+                                minha graduação em Defesa Cibernética na FIAP, e estou trabalhando atualmente em uma central
+                                de operações de segurança na Inviolável. Estou em busca de desafios que me estimulam a querer
+                                aprender sempre um pouco mais. "Um faixa preta é um faixa branca que não desistiu".</p>
+                            <div class="tech-tags">
+                                <span>Graduação</span>
+                                <span>Defesa Cibernética</span>
+                                <span>Desafios</span>
+                            </div>
+                        </div>
+                        <div class="timeline-img">
+                            <img src="assets/img/eu2.png" alt="Gotham Needs Me">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="philosophy">
+                    <h2 class="glitch-title"><span>B4TM4N</span></h2>
+                    <div class="philosophy-grid">
+                        <div class="philosophy-card">
+                            <div class="card-icon">🖥</div>
+                            <h3>Information Technology</h3>
+                            <p>Possuo uma base sólida para atuar e me adaptar em diversas áreas da tecnologia, desde desenvolvimento de software até segurança cibernética.</p>
+                        </div>
+                        <div class="philosophy-card">
+                            <div class="card-icon">🔐</div>
+                            <h3>Cybersecurity</h3>
+                            <p>Sou uma pessoa muito entusiasmada por todas as áreas da cibersegurança. E busco sempre aplicar os conceitos e a mentalidade aprendidos na solução de problemas.</p>
+                        </div>
+                        <div class="philosophy-card">
+                            <div class="card-icon">🧥</div>
+                            <h3>Others</h3>
+                            <p>Também complementando meu arsenal, já usei meu breve domínio da internet para resolver outros tipos de problemas, como desenvolvimento de projetos autônomos, investigações, recuperação de contas,
+                                edição de vídeos, treinamento de agentes de I.A e muito mais.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        
-        
     </main>
 
     <footer></footer>
-
 </body>
 
 </html>
